@@ -21,11 +21,11 @@ using namespace Azure::Storage;
 
 int main(int argc, char* argv[])
 {
-  std::string account("vamosaprobar");
-  std::string endpoint("https://vamosaprobar.blob.core.windows.net");
+  std::string account("*****");
+  std::string endpoint("https://***.blob.core.windows.net");
   std::string bucket("deltalake");
-  std::string secret("qVOrNkZgVD1DNxUa+zi9/j/gj+zYzwwmhpvj8JFa5nrrmsE5kEbhrUnRCMxwHxOeQxsBA2RVkbFG+AStj4jWJw==");
-  std::string pathToFile("aver/tent.pdf");
+  std::string secret("****");
+  std::string pathToFile("****");
   auto sharedKeyCredential = std::make_shared<StorageSharedKeyCredential>(account, secret);
   auto blobClient = std::make_shared<BlobContainerClient>(
       fmt::format("{0}/{1}", endpoint, bucket), sharedKeyCredential);
