@@ -1,0 +1,6 @@
+{
+ "cmake.configureArgs": [
+    "-DCMAKE_TOOLCHAIN_FILE=~/workspace/vcpkg/scripts/buildsystems/vcpkg.cmake",
+    "-DWARNINGS_AS_ERRORS=OFF"
+ ]
+}
